@@ -1,6 +1,6 @@
 // utils/virus_total.js
 
-const virusTotalAPIKey = 'YOUR_VIRIS_TOTAL_API_KEY';
+const virusTotalAPIKey = 'YOUR_VIRUS_TOTAL_API_KEY';
 
 export async function checkURLWithVirusTotal(url) {
   const response = await fetch(`https://www.virustotal.com/api/v3/urls`, {
