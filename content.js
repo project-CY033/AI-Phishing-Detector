@@ -14,3 +14,14 @@ async function scanEmail(email) {
   // Implement email scanning logic here
   // For now, do nothing
 }
+
+
+// update 
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === 'scanPage') {
+    // Implement scanning logic here
+    // For now, respond with a placeholder
+    sendResponse({ status: 'Scanning completed' });
+  }
+});
