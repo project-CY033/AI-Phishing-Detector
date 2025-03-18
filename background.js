@@ -1,6 +1,14 @@
 // background.js
 
-const virusTotalAPIKey = 'YOUR_VIRUS_TOTAL_API_KEY';
+import { checkURLWithVirusTotal } from './utils/virus_total.js';
+import { aiScanURL } from './utils/ai_scanner.js';
+import { scanEmail } from './utils/email_scanner.js';
+
+// Initialize AI model
+let model;
+(async () => {
+  model = await loadModel();
+})();
 
 // Listen for web requests
 chrome.webRequest.onBeforeRequest.addListener(
@@ -8,7 +16,13 @@ chrome.webRequest.onBeforeRequest.addListener(
     const url = details.url;
     const isMalicious = await checkURL(url);
     if (isMalicious) {
-      return { cancel: true };
+      chrome.webRequest.onBeforeRequest.abort(details.requestId);
+      chrome.notifications.create({
+        type: 'basic',
+        iconUrl: 'icons/icon128.png',
+        title: 'Blocked Access',
+        message: `The website ${url} has been blocked as it is suspected to be malicious.`
+      });
     }
   },
   { urls: ["<all_urls>"] },
@@ -18,35 +32,51 @@ chrome.webRequest.onBeforeRequest.addListener(
 // Function to check URL using AI model and VirusTotal
 async function checkURL(url) {
   // First, check against local AI model
-  const isPhishing = await aiScanURL(url);
+  const isPhishing = await aiScanURL(url, model);
   if (isPhishing) {
     return true;
   }
 
   // Double-check with VirusTotal
-  const vtResult = await checkWithVirusTotal(url);
+  const vtResult = await checkURLWithVirusTotal(url);
   return vtResult.isMalicious;
 }
 
-async function aiScanURL(url) {
-  // Load AI model (placeholder)
-  // Implement actual AI scanning logic here
-  // For now, return false
-  return false;
+// Function to load AI model
+async function loadModel() {
+  // Implement model loading logic here
+  // For example:
+  // const model = await tf.loadLayersModel('model.json');
+  // return model;
+  return null; // Placeholder
 }
 
-async function checkWithVirusTotal(url) {
-  const response = await fetch(`https://www.virustotal.com/api/v3/urls`, {
-    method: 'POST',
-    headers: {
-      'x-apikey': virusTotalAPIKey,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ url: url })
-  });
+// Handle email scanning
+chrome.webNavigation.onCompleted.addListener((details) => {
+  if (details.url.includes('mail.google.com')) {
+    chrome.tabs.sendMessage(details.tabId, { action: 'scanEmails' });
+  }
+}, { url: [{ urlContains: 'mail.google.com' }] });
 
-  const data = await response.json();
-  return {
-    isMalicious: data.data.attributes.last_analysis_stats.malicious > 0
-  };
+// Listen for messages from content scripts
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === 'scanEmails') {
+    scanEmailsInPage(sender.tab.id);
+  }
+});
+
+// Function to scan emails in the page
+async function scanEmailsInPage(tabId) {
+  const emails = await getEmailsFromPage(tabId);
+  emails.forEach(email => {
+    const scanResult = scanEmail(email);
+    if (scanResult.isPhishing) {
+      chrome.tabs.sendMessage(tabId, { action: 'markEmailAsPhishing', email: email });
+    }
+  });
+}
+
+async function getEmailsFromPage(tabId) {
+  // Implement logic to retrieve emails from the page
+  return []; // Placeholder
 }
