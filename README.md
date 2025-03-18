@@ -15,6 +15,17 @@
 ```
 AI-Phishing-Detector/
 │
+├── data/
+│   ├── Phishing URLs.csv
+│   └── Legitimate URLs.csv
+├── training/
+│   ├── train_phishing_model.ipynb
+│   └── model/
+│       ├── model.json
+│       └── group1-shard1of1.bin
+├── utils/
+│   ├── ai_scanner.js
+│   └── virus_total.js
 ├── manifest.json
 ├── background.js
 ├── content.js
@@ -27,18 +38,8 @@ AI-Phishing-Detector/
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
-├── training/
-│   ├── train_phishing_model.ipynb
-│   ├── phishing_model.h5
-│   └── ai_scanner.js
-├── utils/
-│   ├── virus_total.js
-│   ├── ai_scanner.js
-│   └── email_scanner.js
-├── data/
-│   └── phishing_dataset.csv
-├── README.md
-└── package.json (if using any npm packages)
+├── package.json
+└── README.md
 ```
 
  
