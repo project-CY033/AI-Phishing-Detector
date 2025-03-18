@@ -2,13 +2,14 @@
 
 import * as tf from '@tensorflow/tfjs';
 
+let model;
+
 export async function loadModel() {
-  const model = await tf.loadLayersModel('model.json');
+  model = await tf.loadLayersModel('training/model/model.json');
   return model;
 }
 
 export async function aiScanURL(url, model) {
-  // Implement feature extraction
   const features = extractFeatures(url);
   const tensor = tf.tensor2d([features], [1, features.length]);
   const prediction = await model.predict(tensor).data();
@@ -16,9 +17,8 @@ export async function aiScanURL(url, model) {
 }
 
 function extractFeatures(url) {
-  // Implement feature extraction logic
-  // For example:
   const length = url.length;
   const hasHttps = url.includes('https') ? 1 : 0;
+  // Add more features as needed
   return [length, hasHttps];
 }
