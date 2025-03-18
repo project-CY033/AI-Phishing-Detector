@@ -1,8 +1,9 @@
 # AI-Phishing-Detector
+![icon16](https://github.com/user-attachments/assets/6e1147a8-75b2-4886-9ecf-e9a381357a10)
 - ### powerful AI for automated detection and blocking of malicious websites and emails. By integrating more sophisticated features and improving the AI model, the extension provides robust protection against phishing and malware threats. Always ensure that the extension complies with all relevant security and privacy standards.
  
 
- 
+
 ---
 ---
 
