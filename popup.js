@@ -8,3 +8,17 @@ document.getElementById('scan-now').addEventListener('click', () => {
     });
   });
 });
+
+// Load settings
+chrome.storage.sync.get(['autoBlock', 'autoReport'], (data) => {
+  document.getElementById('autoBlock').checked = data.autoBlock;
+  document.getElementById('autoReport').checked = data.autoReport;
+});
+
+// Save settings
+document.getElementById('autoBlock').addEventListener('change', (e) => {
+  chrome.storage.sync.set({ autoBlock: e.target.checked });
+});
+document.getElementById('autoReport').addEventListener('change', (e) => {
+  chrome.storage.sync.set({ autoReport: e.target.checked });
+});
