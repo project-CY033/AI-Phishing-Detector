@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "AI Phishing Detector",
-  "version": "1.0",
-  "description": "An AI-powered extension to detect and block phishing websites and emails.",
+  "name": "AI Phishing Detector Pro",
+  "version": "2.0",
+  "description": "An advanced AI-powered extension to detect and block phishing websites and emails with real-time protection.",
   "permissions": [
     "activeTab",
     "scripting",
@@ -12,7 +12,10 @@
     "privacy",
     "http://*/*",
     "https://*/*",
-    "identity"
+    "identity",
+    "notifications",
+    "cookies",
+    "webNavigation"
   ],
   "host_permissions": [
     "*://*/*"
@@ -36,8 +39,23 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["styles.css"]
     }
   ],
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*", "style/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "https://www.virustotal.com/api/v3/*"
+  ]
 }
