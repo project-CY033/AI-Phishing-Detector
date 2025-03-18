@@ -15,30 +15,30 @@
 ```
 AI-Phishing-Detector/
 │
-├── data/
-│   ├── Phishing URLs.csv
-│   └── Legitimate URLs.csv
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── Popup.js
+│   │   ├── Options.js
+│   │   └── ScanResults.js
+│   ├── utils/
+│   │   ├── ai_scanner.js
+│   │   └── virus_total.js
+│   ├── App.js
+│   ├── index.js
+│   ├── popup.html
+│   └── styles.css
 ├── training/
 │   ├── train_phishing_model.ipynb
-│   └── model/
-│       ├── model.json
-│       └── group1-shard1of1.bin
-├── utils/
-│   ├── ai_scanner.js
-│   └── virus_total.js
+│   ├── model/
+│   │   ├── model.json
+│   │   └── group1-shard1of1.bin
+│   └── scaler.save
 ├── manifest.json
-├── background.js
-├── content.js
-├── popup.html
-├── popup.js
-├── options.html
-├── options.js
-├── styles.css
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
 ├── package.json
+├── webpack.config.js
 └── README.md
 ```
 
