@@ -3,6 +3,7 @@
 import { checkURLWithVirusTotal } from './utils/virus_total.js';
 import { aiScanURL } from './utils/ai_scanner.js';
 import { scanEmail } from './utils/email_scanner.js';
+import { aiScanURL, loadModel } from './utils/ai_scanner.js';
 
 // Initialize AI model
 let model;
