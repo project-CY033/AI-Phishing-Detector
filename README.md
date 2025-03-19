@@ -48,7 +48,7 @@ While AI Phishing Detector Pro enhances browsing safety, always practice safe in
 ---
 
 ## 📬 Support
-For questions or issues, please contact: **support@aiphishingdetector.com**
+For questions or issues, please contact: **22cyber33@ecajmer.ac.in**
 
 
 
