@@ -105,7 +105,9 @@ Directory structure:
     ├── Hacathon-data/
     │   └── README.md
     ├── icons/
-    │   └── r
+    │   └── icon128.png
+    │   └── icon16.png
+    │   └── icon48.png
     ├── training/
     │   ├── train.py
     │   ├── train_phishing_model.ipynb
