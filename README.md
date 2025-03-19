@@ -27,14 +27,15 @@ AI Phishing Detector Pro is a powerful Chrome extension that protects users from
 4. Click on **Load unpacked** and select the `AI-Phishing-Detector` folder.
 5. The extension will now appear in your browser’s toolbar.
 
-
+---
+---
 # For modal traning
 - ## switch directory
 ```
 cd AI-Phishing-Detector/training
 ```
 
-# ⚠️  start tarning but it take time and more resources like RAM , CPU etc
+## ⚠️start tarning but it take time and more resources like RAM , CPU etc
 - ## IF your Device have low configuration then you can you pretrain model this preterain model tran on large data set approximate ~ 876840 
 - ## check beform  start traning , check  your device health
 
