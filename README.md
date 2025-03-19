@@ -82,33 +82,58 @@ For questions or issues, please contact: **[Musraf khan](https://22cy033.netlify
 
 
 ```
-AI-Phishing-Detector/
-│
-├── data/
-│   ├── Phishing URLs.csv
-│   └── Legitimate URLs.csv
-├── training/
-│   ├── train_phishing_model.ipynb
-│   └── model/
-│       ├── model.json
-│       └── group1-shard1of1.bin
-├── utils/
-│   ├── ai_scanner.js
-│   └── virus_total.js
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
-│
-├── background.js
-├── content.js
-├── manifest.json
-├── options.html
-├── options.js
-├── popup.html
-├── popup.js
-├── styles.css
-├── package.json
-└── README.md
+Directory structure:
+└── project-cy033-ai-phishing-detector/
+    ├── README.md
+    ├── background.js
+    ├── content.js
+    ├── manifest.json
+    ├── options.html
+    ├── options.js
+    ├── package.json
+    ├── popup.html
+    ├── popup.js
+    ├── styles.css
+    ├── tt.md
+    ├── data/
+    │   ├── Legitimate URLs.csv
+    │   ├── Phishing URLs.csv
+    │   ├── phishing_dataset.csv
+    │   └── r
+    ├── Doc/
+    │   └── README.md
+    ├── Hacathon-data/
+    │   └── README.md
+    ├── icons/
+    │   └── r
+    ├── training/
+    │   ├── train.py
+    │   ├── train_phishing_model.ipynb
+    │   ├── model/
+    │   │   ├── group1-shard1of1.bin
+    │   │   └── model.json
+    │   └── tuner_results/
+    │       └── phishing_detector_tuning/
+    │           ├── oracle.json
+    │           ├── tuner0.json
+    │           ├── trial_00/
+    │           │   ├── build_config.json
+    │           │   ├── checkpoint.weights.h5
+    │           │   └── trial.json
+    │           ├── trial_01/
+    │           │   ├── build_config.json
+    │           │   ├── checkpoint.weights.h5
+    │           │   └── trial.json
+    │           ├── trial_02/
+    │           │   ├── build_config.json
+    │           │   ├── checkpoint.weights.h5
+    │           │   └── trial.json
+    │           └── trial_03/
+    │               └── trial.json
+    └── utils/
+        ├── ai_scanner.js
+        ├── email_scanner.js
+        └── virus_total.js
+
 
 ```
