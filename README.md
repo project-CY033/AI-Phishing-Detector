@@ -48,7 +48,7 @@ cd AI-Phishing-Detector/training
 ```
 
 ## ⚠️start tarning but it take time and more resources like RAM , CPU etc
-- ## IF your Device have low configuration then you can you pretrain model this preterain model tran on large data set approximate ~ 876840 
+- ## IF your Device have low configuration then you can use pretrain model this preterain model tran on large data set approximate ~ 876840 
 - ## check beform  start traning , check  your device health
 
 ## start training model
