@@ -1,4 +1,4 @@
-# AI Phishing Detector Pro
+# AI Phishing Detector 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/301e9c18-2dd3-4c7a-8ecc-a829097d44e1" 
@@ -13,7 +13,7 @@
 
 
 ## 🚀 Overview
-AI Phishing Detector Pro is a powerful Chrome extension that protects users from phishing attacks using advanced AI models and VirusTotal integration.
+AI Phishing Detector  is a powerful Chrome extension that protects users from phishing attacks using advanced AI models and VirusTotal integration.
 
 ---
 
@@ -94,8 +94,7 @@ For questions or issues, please contact: **[Musraf khan](https://22cy033.netlify
 
 
 ```
-Directory structure:
-└── project-cy033-ai-phishing-detector/
+ AI-Phishing-Detector/
     ├── README.md
     ├── background.js
     ├── content.js
