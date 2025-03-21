@@ -145,6 +145,7 @@ To effectively counter these evolving threats, organizations must implement mult
 
 - **Authentication Strengthening**: Implementing additional verification mechanisms for high-risk actions to mitigate the impact of successful phishing attempts.
 
+
 ## Conclusion
 
 AI-powered phishing detection represents a critical evolution in cybersecurity defense, providing organizations with the capabilities needed to counter increasingly sophisticated attacks. The integration of advanced algorithms, anomaly detection, and Large Language Models significantly enhances threat identification capabilities, while continuous monitoring enables real-time protection across web browsers and email systems.
@@ -152,3 +153,29 @@ AI-powered phishing detection represents a critical evolution in cybersecurity d
 However, successful implementation requires addressing several key challenges. Organizations must balance security requirements with privacy considerations, manage false positives to maintain operational efficiency, and ensure appropriate human oversight to complement AI capabilities. Additionally, security teams must continuously update detection systems to counter emerging tactics such as AI-generated content, deepfakes, and polymorphic attacks.
 
 The future of phishing detection lies in adaptive, multi-layered approaches that combine technological innovation with human expertise. By implementing comprehensive detection strategies that evolve alongside threats, organizations can significantly reduce their vulnerability to phishing attacks while maintaining user privacy and system usability.
+
+In summary, the ongoing integration of AI, and particularly the infusion of Large Language Models into phishing detection systems, shows great promise for the field of cybersecurity. As threat actors refine their tactics, continuous research, adaptive countermeasures, and cross-disciplinary collaboration will be essential to sustaining and enhancing digital security. Further studies and real-world applications are needed to refine these approaches and optimize the balance between security effectiveness and privacy protections.
+
+## Reference
+
+- Medium: How Fraud Detection Stays Relevant in the Age of LLMs. Retrieved from https://s-hash-wat.medium.com/how-fraud-detection-stays-relevant-in-the-age-of-llms-f6debe7be518.
+- arXiv: Bias and Fairness in AI Systems. Retrieved from https://arxiv.org/pdf/2502.04759.
+- arXiv: Computational Requirements for AI-Powered Systems. Retrieved from https://arxiv.org/html/2411.13874v1.
+- Qualys Blog: The Impact of LLMs on Cybersecurity – New Threats and Solutions. Retrieved from https://blog.qualys.com/misc/2025/02/07/the-impact-of-llms-on-cybersecurity-new-threats-and-solutions.
+- Medium: Integrating Intelligent Decisioning and LLMs for Real-Time Analytical Decision Making in Phishing. Retrieved from https://dwivedy.medium.com/integrating-intelligent-decisioning-and-llms-for-real-time-analytical-decision-making-phishing-ee2c0df1f3aa.
+- Perception Point: AI Security – Top 10 Threats and Best Practices. Retrieved from https://perception-point.io/guides/ai-security/why-llm-security-matters-top-10-threats-and-best-practices.
+- Security Boulevard: AI Phishing Detection Isn’t Perfect – Why False Positives Are a Problem. Retrieved from https://securityboulevard.com/2021/05/ai-phishing-detection-isnt-perfect-why-false-positives-are-a-problem/.
+- TechTarget: How to Prevent False Positives in Email Fraud Detection. Retrieved from https://www.techtarget.com/searchsecurity/feature/How-to-prevent-false-positives-in-email-fraud-detection.
+- Webasha: How AI Can Detect and Prevent Phishing Attacks – The Future of Cybersecurity Defense. Retrieved from https://www.webasha.com/blog/how-ai-can-detect-and-prevent-phishing-attacks-the-future-of-cybersecurity-defense.
+
+- QA: AI Phishing Insights. Retrieved from https://www.qa.com/en-us/resources/blog/ai-phishing/.
+- Dialzara: Human Oversight in AI – Best Practices. Retrieved from https://dialzara.com/blog/human-oversight-in-ai-best-practices.
+- LinkedIn: Balancing AI Automation with Human Oversight in Cybersecurity. Retrieved from https://www.linkedin.com/pulse/how-can-we-strike-balance-between-ai-automation-human-oversight-odxcc.
+- Vipre: AI Is Changing Phishing Tactics. Retrieved from https://vipre.com/blog/ai-is-changing-phishing-tactics/?srsltid=AfmBOorXryE4z3wFLwpDaiaQfQ-4siG3i-xMtqpUG1qU6Qia-Oco0Vkq.
+- CrowdStrike: AI-Powered Cyberattacks. Retrieved from https://www.crowdstrike.com/en-us/cybersecurity-101/cyberattacks/ai-powered-cyberattacks/.
+- TechTarget: Generative AI Makes Phishing Attacks More Dangerous. Retrieved from https://www.techtarget.com/searchsecurity/tip/Generative-AI-is-making-phishing-attacks-more-dangerous.
+- KnowBe4: AI-Powered Polymorphic Phishing Campaigns. Retrieved from https://www.prnewswire.com/news-releases/new-knowbe4-report-reveals-a-spike-in-ransomware-payloads-and-ai-powered-polymorphic-phishing-campaigns-302406704.html.
+- ID Agent: How AI Powers Next-Gen Phishing Attacks. Retrieved from https://www.idagent.com/blog/how-ai-powers-next-gen-phishing-attacks/.
+- Security Intelligence: Unravelling New-Age Phishing Tactics. Retrieved from https://securityintelligence.com/x-force/ai-vs-human-deceit-unravelling-new-age-phishing-tactics/.
+- CrowdStrike: Advanced AI Detection Systems. Retrieved from https://www.crowdstrike.com/en-us/cybersecurity-101/social-engineering/phishing-attack/.
+- Forbes: Combating AI-Powered Phishing in an Ambiguous Cyber Landscape. Retrieved from https://conceal.io/how-to-combat-ai-powered-phishing-in-an-increasingly-ambiguous-cyber-landscape/.
